@@ -1,0 +1,92 @@
+<?php
+
+/**
+  * @author Amjad Iqbal
+  * @author Amjad Iqbal <contact@amjadiqbal.me>
+  */
+
+return [
+    
+    'default' => [
+        'title'             => '',
+        'text'              => '',
+        'timer'             => '',
+        'width'             => '',
+        'heightAuto'        => '',
+        'padding'           => '',
+        'animation'         => '',
+        'showConfirmButton' => false,
+        'showCloseButton'   => true,
+    ],
+    /**
+     * These are supported arguments which can be used in alert function.
+     */
+    'supported' => [
+      'title'                      => '',
+      'titleText'                  => '',
+      'html'                       => '',
+      'text'                       => '',
+      'type'                       => '',
+      'footer'                     => '',
+      'backdrop'                   => '',
+      'toast'                      => '',
+      'target'                     => '',
+      'input'                      => '',
+      'width'                      => '',
+      'padding'                    => '',
+      'background'                 => '',
+      'position'                   => '',
+      'grow'                       => '',
+      'customClass'                => '',
+      'timer'                      => '',
+      'animation'                  => '',
+      'heightAuto'                 => '',
+      'allowOutsideClick'          => '',
+      'allowEscapeKey'             => '',
+      'allowEnterKey'              => '',
+      'stopKeydownPropagation'     => '',
+      'keydownListenerCapture'     => '',
+      'showConfirmButton'          => '',
+      'showCancelButton'           => '',
+      'confirmButtonText'          => '',
+      'cancelButtonText'           => '',
+      'confirmButtonColor'         => '',
+      'cancelButtonColor'          => '',
+      'confirmButtonClass'         => '',
+      'cancelButtonClass'          => '',
+      'confirmButtonAriaLabel'     => '',
+      'cancelButtonAriaLabel'      => '',
+      'buttonsStyling'             => '',
+      'reverseButtons'             => '',
+      'focusConfirm'               => '',
+      'focusCancel'                => '',
+      'showCloseButton'            => '',
+      'closeButtonHtml'            => '',
+      'closeButtonAriaLabel'       => '',
+      'showLoaderOnConfirm'        => '',
+      'scrollbarPadding'           => '',
+      'preConfirm'                 => '',
+      'imageUrl'                   => '',
+      'imageWidth'                 => '',
+      'imageHeight'                => '',
+      'imageAlt'                   => '',
+      'imageClass'                 => '',
+      'inputPlaceholder'           => '',
+      'inputValue'                 => '',
+      'inputOptions'               => '',
+      'inputAutoTrim'              => '',
+      'inputAttributes'            => '',
+      'inputValidator'             => '',
+      'validationMessage'          => '',
+      'inputClass'                 => '',
+      'progressSteps'              => '',
+      'currentProgressStep'        => '',
+      'progressStepsDistance'      => '',
+      'onBeforeOpen'               => '',
+      'onOpen'                     => '',
+      'onRender'                   => '',
+      'onClose'                    => '',
+      'onAfterClose'               => '',
+    ]
+
+];

@@ -1,0 +1,37 @@
+{
+    "name": "dmsysop/sweetalert",
+    "type": "library",
+    "description": "A BEAUTIFUL, RESPONSIVE, CUSTOMIZABLE, ACCESSIBLE (WAI-ARIA) REPLACEMENT FOR JAVASCRIPT'S POPUP BOXES , AVAILABLE FOR LARAVEL PROJECTS.",
+    "keywords": ["laravel" , "sweetalert2" , "sweetalert" ,"alert" , "notifier" , "toast"  , "sweet" , "POPUP BOXES"],
+    "homepage": "https://github.com/dmsysop/sweetalert",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Douglas M",
+            "email": "douglasm@outlook.com",
+            "role": "Full Stack Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "~5.4.0|~5.8.0|~5.9.0|^6.0"
+    },
+    "require-dev": {
+        "symfony/thanks": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DMSysOp\\SweetAlert\\": "src/"
+        },
+        "files": [
+            "src/Helpers/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DMSysOp\\SweetAlert\\Providers\\SweetAlertServiceProvider"
+            ]
+        }
+    }
+}
