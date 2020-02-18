@@ -1,241 +1,233 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="In configuration files we have defined default values and also supported values for our sweetalert package , default values will be used in which case when you forget to define argument in alert function except title , because title is required to show alert popup."
+    />
+    <meta name="theme-color" content="#ffcd00" />
 
-<head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta name='description' content='In configuration files we have defined default values and also supported values for our sweetalert package , default values will be used in which case when you forget to define argument in alert function except title , because title is required to show alert popup.'>
-    <meta name='theme-color' content='#ffcd00'>
-
-    <meta property='og:title' content='How to Configure SweetAlert in Laravel Package'>
-    <meta property='og:description' content='In configuration files we have defined default values and also supported values for our sweetalert package , default values will be used in which case when you forget to define argument in alert function except title , because title is required to show alert popup.'>
-    <meta property='og:url' content='https://amjadiqbal.github.io/sweetalert/configuration.html'>
-    <meta property='og:site_name' content='Minimo'>
-    <meta property='og:type' content='website'>
-    <meta property='og:updated_time' content='2019-09-28T21:00:00&#43;06:00' />
+    <meta
+      property="og:title"
+      content="How to Configure SweetAlert in Laravel Package"
+    />
+    <meta
+      property="og:description"
+      content="In configuration files we have defined default values and also supported values for our sweetalert package , default values will be used in which case when you forget to define argument in alert function except title , because title is required to show alert popup."
+    />
+    <meta property="og:site_name" content="Minimo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:updated_time" content="2019-09-28T21:00:00&#43;06:00" />
 
     <title>How to Configure SweetAlert in Laravel Package</title>
-    <link rel='canonical' href='https://amjadiqbal.github.io/sweetalert/configuration.html'>
 
-    <link rel='icon' href='images/favicon.png'>
-    <link rel='stylesheet' href='assets/css/main.6a060eb7.css'>
-    <link rel='stylesheet' href='css/custom.css'>
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="assets/css/main.6a060eb7.css" />
+    <link rel="stylesheet" href="css/custom.css" />
     <style>
-        :root {
-            --color-accent: #ffcd00;
-        }
-        .text-center{
-            text-align: center;
-        }
-        .custom-block.tip{
-            background-color: #f3f5f7;
-            border-color: #8d64a4;
-        }
-        .custom-block.tip, .custom-block.warning, .custom-block.danger {
-            padding: 0.1rem 1.5rem;
-            border-left-width: 0.5rem;
-            border-left-style: solid;
-            margin: 1rem 0;
-        }
-        .custom-block p{
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
+      :root {
+        --color-accent: #ffcd00;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .custom-block.tip {
+        background-color: #f3f5f7;
+        border-color: #8d64a4;
+      }
+      .custom-block.tip,
+      .custom-block.warning,
+      .custom-block.danger {
+        padding: 0.1rem 1.5rem;
+        border-left-width: 0.5rem;
+        border-left-style: solid;
+        margin: 1rem 0;
+      }
+      .custom-block p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
     </style>
+  </head>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151185053-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <body class="home type-page has-sidebar">
+    <div class="site">
+      <div id="sidebar" class="sidebar">
+        <a class="screen-reader-text" href="#main-menu">Skip to Main Menu</a>
 
-  gtag('config', 'UA-151185053-1');
-</script>
-    
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5db932cde4c2fa4b6bd918f3/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-
-
-
-</head>
-
-<body class='home type-page has-sidebar'>
-
-    <div class='site'>
-        <div id='sidebar' class='sidebar'>
-            <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
-
-            <div class='container'>
-                <section class='widget widget-about sep-after'>
-                    <header>
-
-                        <div class='logo'>
-                            <a href='https://amjadiqbal.github.io/sweetalert/'>
-                                <img src='images/logo.png' width="300px">
-                            </a>
-                        </div>
-
-                    </header>
-
-                </section>
-
-                <section class='widget widget-sidebar_menu sep-after'>
-                    <nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
-                        <div class='container'>
-                            <ul>
-                                <li class='item'>
-                                    <a aria-current='page' href='index.html'>Getting Started</a>
-                                </li>
-                                <li class='item'>
-                                    <a aria-current='page' href='installation.html'>Installation</a>
-                                </li>
-                                <li class='item'>
-                                    <a aria-current='page' href='integeration.html'>Integeration</a>
-                                </li>
-                                <li class='item current'>
-                                    <a aria-current='page' href='configuration.html'>Configuration</a>
-                                </li>
-                                <li class='item has-children'>
-                                    <a href='usuage.html'>Usuage</a>
-                                    <button class='sub-menu-toggler'>
-                                        <span class='screen-reader-text'>expand sub menu</span>
-                                        <span class='sign'></span>
-                                    </button>
-
-                                    <ul class='sub-menu'>
-                                        <li class='item'>
-                                            <a href='usuage.html#success'>Success</a>
-                                        </li>
-                                        <li class='item'>
-                                            <a href='usuage.html#error'>Error</a>
-                                        </li>
-                                        <li class='item'>
-                                            <a href='usuage.html#warning'>Warning</a>
-                                        </li>
-                                        <li class='item'>
-                                            <a href='usuage.html#info'>Info</a>
-                                        </li>
-                                        <li class='item'>
-                                            <a href='usuage.html#question'>Question</a>
-                                        </li>
-                                        <li class='item'>
-                                            <a href='usuage.html#toast'>Toast</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class='item'>
-                                    <a href='middleware.html'>Middleware</a>
-                                </li>
-                                <li class='item'>
-                                    <a href='forms.html'>Forms</a>
-                                </li>
-                                <!-- <li class='item'>
-                                    <a href='examples.html'>Examples</a>
-                                </li> -->
-                                <!-- <li class='item has-children'>
-                                    <a href='faq.html'>Faqs</a>
-                                    <button class='sub-menu-toggler'>
-                                        <span class='screen-reader-text'>expand sub menu</span>
-                                        <span class='sign'></span>
-                                    </button>
-
-                                    <ul class='sub-menu'>
-                                        <li class='item'>
-                                            <a href='faq.html#middleware_not_working'>Middleware Not working</a>
-                                        </li>
-                                    </ul>
-                                </li> -->
-                                
-                            </ul>
-                        </div>
-                    </nav>
-                </section>
-
-            </div>
-
-            <div class='sidebar-overlay'></div>
-        </div>
-        <div class='main'>
-            <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
-                <div class='container'>
-                    <a class='screen-reader-text' href='#content'>Skip to Content</a>
-
-                    <button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
-                        <span class='screen-reader-text'>Toggle Sidebar</span>
-                        <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round'
-                                stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-
-                                <line x1="3" y1="12" x2="21" y2="12" />
-                                <line x1="3" y1="6" x2="21" y2="6" />
-                                <line x1="3" y1="18" x2="21" y2="18" />
-
-                            </svg>
-                        </span>
-                        <span class='close'>
-                            <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round'
-                                stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-                                <line x1="18" y1="6" x2="6" y2="18" />
-                                <line x1="6" y1="6" x2="18" y2="18" />
-                            </svg>
-                        </span>
-                    </button>
-                    
-                </div>
-            </nav>
-            <div class='header-widgets'>
-                <div class='container'>
-                    <style>
-                        .widget-breadcrumbs li:after {
-                            content: '\2f '
-                        }
-                    </style>
-                    <section class='widget widget-breadcrumbs sep-after'>
-                        <nav id='breadcrumbs'>
-                            <ol>
-                                <li>
-                                    <a href="index.html">
-                                        <span>Home</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="configuration.html">
-                                        <span>Configuration</span>
-                                    </a>
-                                </li>
-                            </ol>
-                        </nav>
-                    </section>
-                </div>
-            </div>
-
-            <header id='header' class='header site-header'>
-                <div class='container'>
-                    <div class='header-info'>
-                        <h1 class='site-title title'>Configuration</h1>
-                        <p class='desc site-desc'>In configuration files we have defined default values and also supported values for our sweetalert package , default values will be used in which case when you forget to define argument in alert function except title , because title is required to show alert popup. </p>
-                    </div>
-                </div>
-            </header>
-
-            <main id='content'>               
-              
-              <div class="tip custom-block">
-                    <p>Change the default array value to make it available by default without defining it on a function , you can edit at at config/sweetalert.php</p>
+        <div class="container">
+          <section class="widget widget-about sep-after">
+            <header>
+              <div class="logo">
+                <a href="/">
+                  <img src="images/logo.png" width="300px" />
+                </a>
               </div>
+            </header>
+          </section>
 
-              <pre><code>
+          <section class="widget widget-sidebar_menu sep-after">
+            <nav
+              id="sidebar-menu"
+              class="menu sidebar-menu"
+              aria-label="Sidebar Menu"
+            >
+              <div class="container">
+                <ul>
+                  <li class="item">
+                    <a aria-current="page" href="index.html">Getting Started</a>
+                  </li>
+                  <li class="item">
+                    <a aria-current="page" href="installation.html"
+                      >Installation</a
+                    >
+                  </li>
+                  <li class="item">
+                    <a aria-current="page" href="integeration.html"
+                      >Integeration</a
+                    >
+                  </li>
+                  <li class="item current">
+                    <a aria-current="page" href="configuration.html"
+                      >Configuration</a
+                    >
+                  </li>
+                  <li class="item has-children">
+                    <a href="usage.html">Usuage</a>
+                    <button class="sub-menu-toggler">
+                      <span class="screen-reader-text">expand sub menu</span>
+                      <span class="sign"></span>
+                    </button>
+
+                    <ul class="sub-menu">
+                      <li class="item">
+                        <a href="usage.html#success">Success</a>
+                      </li>
+                      <li class="item">
+                        <a href="usage.html#error">Error</a>
+                      </li>
+                      <li class="item">
+                        <a href="usage.html#warning">Warning</a>
+                      </li>
+                      <li class="item">
+                        <a href="usage.html#info">Info</a>
+                      </li>
+                      <li class="item">
+                        <a href="usage.html#question">Question</a>
+                      </li>
+                      <li class="item">
+                        <a href="usage.html#toast">Toast</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="item">
+                    <a href="middleware.html">Middleware</a>
+                  </li>
+                  <li class="item">
+                    <a href="forms.html">Forms</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </section>
+        </div>
+
+        <div class="sidebar-overlay"></div>
+      </div>
+      <div class="main">
+        <nav id="main-menu" class="menu main-menu" aria-label="Main Menu">
+          <div class="container">
+            <a class="screen-reader-text" href="#content">Skip to Content</a>
+
+            <button
+              id="sidebar-toggler"
+              class="sidebar-toggler"
+              aria-controls="sidebar"
+            >
+              <span class="screen-reader-text">Toggle Sidebar</span>
+              <span class="open"
+                ><svg
+                  class="icon"
+                  viewbox="0 0 24 24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <line x1="3" y1="12" x2="21" y2="12" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+              </span>
+              <span class="close">
+                <svg
+                  class="icon"
+                  viewbox="0 0 24 24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </nav>
+        <div class="header-widgets">
+          <div class="container">
+            <style>
+              .widget-breadcrumbs li:after {
+                content: "\2f ";
+              }
+            </style>
+            <section class="widget widget-breadcrumbs sep-after">
+              <nav id="breadcrumbs">
+                <ol>
+                  <li>
+                    <a href="index.html">
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="configuration.html">
+                      <span>Configuration</span>
+                    </a>
+                  </li>
+                </ol>
+              </nav>
+            </section>
+          </div>
+        </div>
+
+        <header id="header" class="header site-header">
+          <div class="container">
+            <div class="header-info">
+              <h1 class="site-title title">Configuration</h1>
+              <p class="desc site-desc">
+                In configuration files we have defined default values and also
+                supported values for our sweetalert package , default values
+                will be used in which case when you forget to define argument in
+                alert function except title , because title is required to show
+                alert popup.
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <main id="content">
+          <div class="tip custom-block">
+            <p>
+              Change the default array value to make it available by default
+              without defining it on a function , you can edit at at
+              config/sweetalert.php
+            </p>
+          </div>
+
+          <pre><code>
 return [
 
     'default' => [
@@ -324,22 +316,23 @@ return [
     ]
 ];
               </code></pre>
+        </main>
 
-            </main>
-
-            <footer id='footer' class='footer'>
-                <div class='container sep-before'>
-                    <p>&#9993; : <a href="mailto:contact@amjadiqbal.me">contact@amjadiqbal.me</a></p>
-                </div>
-            </footer>
-
-        </div>
+        <footer id="footer" class="footer">
+          <div class="container sep-before">
+            <p>
+              &#9993; :
+              <a href="mailto:douglasm@outlook.com">douglasm@outlook.com</a>
+            </p>
+          </div>
+        </footer>
+      </div>
     </div>
-    <script>window.__assets_js_src = "assets/js/"</script>
+    <script>
+      window.__assets_js_src = "assets/js/";
+    </script>
 
-    <script src='assets/js/main.67d669ac.js'></script>
-    <script src='js/custom.js'></script>
-
-</body>
-
+    <script src="assets/js/main.67d669ac.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>

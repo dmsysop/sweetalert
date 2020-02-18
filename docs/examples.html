@@ -1,250 +1,284 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Minimalist theme for Hugo" />
+    <meta name="theme-color" content="#ffcd00" />
 
-<head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta name='description' content='Minimalist theme for Hugo'>
-    <meta name='theme-color' content='#ffcd00'>
-
-    <meta property='og:title' content='Minimo'>
-    <meta property='og:description' content='Minimalist theme for Hugo'>
-    <meta property='og:url' content='https://minimo.netlify.com/'>
-    <meta property='og:site_name' content='Minimo'>
-    <meta property='og:type' content='website'>
-    <meta property='og:updated_time' content='2019-09-28T21:00:00&#43;06:00' />
-    <meta name='twitter:card' content='summary'>
+    <meta property="og:title" content="Minimo" />
+    <meta property="og:description" content="Minimalist theme for Hugo" />
+    <meta property="og:url" content="https://minimo.netlify.com/" />
+    <meta property="og:site_name" content="Minimo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:updated_time" content="2019-09-28T21:00:00&#43;06:00" />
+    <meta name="twitter:card" content="summary" />
 
     <meta name="generator" content="Hugo 0.55.4" />
 
     <title>Minimo</title>
-    <link rel='canonical' href='https://minimo.netlify.com/'>
+    <link rel="canonical" href="https://minimo.netlify.com/" />
 
-    <link href="https://minimo.netlify.com/index.xml" rel="alternate" type="application/rss+xml" title="Minimo" />
+    <link
+      href="https://minimo.netlify.com/index.xml"
+      rel="alternate"
+      type="application/rss+xml"
+      title="Minimo"
+    />
 
-
-    <link rel='icon' href='/favicon.ico'>
-    <link rel='stylesheet' href='assets/css/main.6a060eb7.css'>
-    <link rel='stylesheet' href='css/custom.css'>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/main.6a060eb7.css" />
+    <link rel="stylesheet" href="css/custom.css" />
     <style>
-        :root {
-            --color-accent: #ffcd00;
-        }
-        .text-center{
-            text-align: center;
-        }
-        .custom-block.tip{
-            background-color: #f3f5f7;
-            border-color: #8d64a4;
-        }
-        .custom-block.tip, .custom-block.warning, .custom-block.danger {
-            padding: 0.1rem 1.5rem;
-            border-left-width: 0.5rem;
-            border-left-style: solid;
-            margin: 1rem 0;
-        }
-        .custom-block p{
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
+      :root {
+        --color-accent: #ffcd00;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .custom-block.tip {
+        background-color: #f3f5f7;
+        border-color: #8d64a4;
+      }
+      .custom-block.tip,
+      .custom-block.warning,
+      .custom-block.danger {
+        padding: 0.1rem 1.5rem;
+        border-left-width: 0.5rem;
+        border-left-style: solid;
+        margin: 1rem 0;
+      }
+      .custom-block p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
     </style>
+  </head>
 
+  <body class="home type-page has-sidebar">
+    <div class="site">
+      <div id="sidebar" class="sidebar">
+        <a class="screen-reader-text" href="#main-menu">Skip to Main Menu</a>
 
-
-</head>
-
-<body class='home type-page has-sidebar'>
-
-    <div class='site'>
-        <div id='sidebar' class='sidebar'>
-            <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
-
-            <div class='container'>
-                <section class='widget widget-about sep-after'>
-                    <header>
-
-                        <div class='logo'>
-                            <a href='/'>
-                                <img src='images/logo.png' width="300px">
-                            </a>
-                        </div>
-
-                    </header>
-
-                </section>
-
-                <section class='widget widget-sidebar_menu sep-after'>
-                    <nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
-                        <div class='container'>
-                            <ul>
-                                <li class='item'>
-                                    <a aria-current='page' href='index.html'>Getting Started</a>
-                                </li>
-                                <li class='item'>
-                                    <a aria-current='page' href='installation.html'>Installation</a>
-                                </li>
-                                <li class='item'>
-                                    <a aria-current='page' href='integeration.html'>Integeration</a>
-                                </li>
-                                <li class='item'>
-                                    <a aria-current='page' href='configuration.html'>Configuration</a>
-                                </li>
-                                <li class='item has-children'>
-                                    <a href='usuage.html'>Usuage</a>
-                                    <button class='sub-menu-toggler'>
-                                        <span class='screen-reader-text'>expand sub menu</span>
-                                        <span class='sign'></span>
-                                    </button>
-
-                                    <ul class='sub-menu'>
-                                        <li class='item'>
-                                            <a href='usuage.html#success'>Success</a>
-                                        </li>
-                                        <li class='item'>
-                                            <a href='usuage.html#error'>Error</a>
-                                        </li>
-                                        <li class='item'>
-                                            <a href='usuage.html#warning'>Warning</a>
-                                        </li>
-                                        <li class='item'>
-                                            <a href='usuage.html#info'>Info</a>
-                                        </li>
-                                        <li class='item'>
-                                            <a href='usuage.html#question'>Question</a>
-                                        </li>
-                                        <li class='item'>
-                                            <a href='usuage.html#toast'>Toast</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class='item'>
-                                    <a href='middleware.html'>Middleware</a>
-                                </li>
-                                <li class='item'>
-                                    <a href='forms.html'>Forms</a>
-                                </li>
-                                <li class='item  current'>
-                                    <a href='examples.html'>Examples</a>
-                                </li>
-                                <li class='item has-children'>
-                                    <a href='faq.html'>Faqs</a>
-                                    <button class='sub-menu-toggler'>
-                                        <span class='screen-reader-text'>expand sub menu</span>
-                                        <span class='sign'></span>
-                                    </button>
-
-                                    <ul class='sub-menu'>
-                                        <li class='item'>
-                                            <a href='faq.html#middleware_not_working'>Middleware Not working</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                
-                            </ul>
-                        </div>
-                    </nav>
-                </section>
-
-            </div>
-
-            <div class='sidebar-overlay'></div>
-        </div>
-        <div class='main'>
-            <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
-                <div class='container'>
-                    <a class='screen-reader-text' href='#content'>Skip to Content</a>
-
-                    <button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
-                        <span class='screen-reader-text'>Toggle Sidebar</span>
-                        <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round'
-                                stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-
-                                <line x1="3" y1="12" x2="21" y2="12" />
-                                <line x1="3" y1="6" x2="21" y2="6" />
-                                <line x1="3" y1="18" x2="21" y2="18" />
-
-                            </svg>
-                        </span>
-                        <span class='close'>
-                            <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round'
-                                stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-                                <line x1="18" y1="6" x2="6" y2="18" />
-                                <line x1="6" y1="6" x2="18" y2="18" />
-                            </svg>
-                        </span>
-                    </button>
-                    
-                </div>
-            </nav>
-            <div class='header-widgets'>
-                <div class='container'>
-                    <style>
-                        .widget-breadcrumbs li:after {
-                            content: '\2f '
-                        }
-                    </style>
-                    <section class='widget widget-breadcrumbs sep-after'>
-                        <nav id='breadcrumbs'>
-                            <ol>
-                                <li>
-                                    <a href="index.html">
-                                        <span>Home</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="examples.html">
-                                        <span>Examples</span>
-                                    </a>
-                                </li>
-                            </ol>
-                        </nav>
-                    </section>
-                </div>
-            </div>
-
-            <header id='header' class='header site-header'>
-                <div class='container'>
-                    <div class='header-info'>
-                        <h1 class='site-title title'>Forms</h1>
-                        <p class='desc site-desc'>Now using this simple technique you can make sweetalert popup into modelbox.</p>
-                    </div>
-                </div>
+        <div class="container">
+          <section class="widget widget-about sep-after">
+            <header>
+              <div class="logo">
+                <a href="/">
+                  <img src="images/logo.png" width="300px" />
+                </a>
+              </div>
             </header>
+          </section>
 
-            <div class="tip custom-block">
-                <p>Before we add custom html template in sweetalert popup , you have to import namespace in your controller.</p>
+          <section class="widget widget-sidebar_menu sep-after">
+            <nav
+              id="sidebar-menu"
+              class="menu sidebar-menu"
+              aria-label="Sidebar Menu"
+            >
+              <div class="container">
+                <ul>
+                  <li class="item">
+                    <a aria-current="page" href="index.html">Getting Started</a>
+                  </li>
+                  <li class="item">
+                    <a aria-current="page" href="installation.html"
+                      >Installation</a
+                    >
+                  </li>
+                  <li class="item">
+                    <a aria-current="page" href="integeration.html"
+                      >Integeration</a
+                    >
+                  </li>
+                  <li class="item">
+                    <a aria-current="page" href="configuration.html"
+                      >Configuration</a
+                    >
+                  </li>
+                  <li class="item has-children">
+                    <a href="usage.html">Usuage</a>
+                    <button class="sub-menu-toggler">
+                      <span class="screen-reader-text">expand sub menu</span>
+                      <span class="sign"></span>
+                    </button>
+
+                    <ul class="sub-menu">
+                      <li class="item">
+                        <a href="usage.html#success">Success</a>
+                      </li>
+                      <li class="item">
+                        <a href="usage.html#error">Error</a>
+                      </li>
+                      <li class="item">
+                        <a href="usage.html#warning">Warning</a>
+                      </li>
+                      <li class="item">
+                        <a href="usage.html#info">Info</a>
+                      </li>
+                      <li class="item">
+                        <a href="usage.html#question">Question</a>
+                      </li>
+                      <li class="item">
+                        <a href="usage.html#toast">Toast</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="item">
+                    <a href="middleware.html">Middleware</a>
+                  </li>
+                  <li class="item">
+                    <a href="forms.html">Forms</a>
+                  </li>
+                  <li class="item  current">
+                    <a href="examples.html">Examples</a>
+                  </li>
+                  <li class="item has-children">
+                    <a href="faq.html">Faqs</a>
+                    <button class="sub-menu-toggler">
+                      <span class="screen-reader-text">expand sub menu</span>
+                      <span class="sign"></span>
+                    </button>
+
+                    <ul class="sub-menu">
+                      <li class="item">
+                        <a href="faq.html#middleware_not_working"
+                          >Middleware Not working</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </section>
+        </div>
+
+        <div class="sidebar-overlay"></div>
+      </div>
+      <div class="main">
+        <nav id="main-menu" class="menu main-menu" aria-label="Main Menu">
+          <div class="container">
+            <a class="screen-reader-text" href="#content">Skip to Content</a>
+
+            <button
+              id="sidebar-toggler"
+              class="sidebar-toggler"
+              aria-controls="sidebar"
+            >
+              <span class="screen-reader-text">Toggle Sidebar</span>
+              <span class="open"
+                ><svg
+                  class="icon"
+                  viewbox="0 0 24 24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <line x1="3" y1="12" x2="21" y2="12" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+              </span>
+              <span class="close">
+                <svg
+                  class="icon"
+                  viewbox="0 0 24 24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </nav>
+        <div class="header-widgets">
+          <div class="container">
+            <style>
+              .widget-breadcrumbs li:after {
+                content: "\2f ";
+              }
+            </style>
+            <section class="widget widget-breadcrumbs sep-after">
+              <nav id="breadcrumbs">
+                <ol>
+                  <li>
+                    <a href="index.html">
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="examples.html">
+                      <span>Examples</span>
+                    </a>
+                  </li>
+                </ol>
+              </nav>
+            </section>
+          </div>
+        </div>
+
+        <header id="header" class="header site-header">
+          <div class="container">
+            <div class="header-info">
+              <h1 class="site-title title">Forms</h1>
+              <p class="desc site-desc">
+                Now using this simple technique you can make sweetalert popup
+                into modelbox.
+              </p>
             </div>
+          </div>
+        </header>
 
-            <main id='content'>
-                <pre><code>use Illuminate\Support\Facades\View;</code></pre>
-               
-              
-              <p>Now you have to defined the template directory where you have write your html code</p>
-<pre><code>alert([ 
+        <div class="tip custom-block">
+          <p>
+            Before we add custom html template in sweetalert popup , you have to
+            import namespace in your controller.
+          </p>
+        </div>
+
+        <main id="content">
+          <pre><code>use Illuminate\Support\Facades\View;</code></pre>
+
+          <p>
+            Now you have to defined the template directory where you have write
+            your html code
+          </p>
+          <pre><code>alert([ 
     'title' => 'Login Form', 
     'html'  => (string)View::make('vendor.sweetalert.template.login'),
     'showCloseButton' => true,
     'allowOutsideClick' =>false
 ]);
 </code></pre>
-             
-              <p>Now here you can see i am pointing to the views folder actual file path is resources/views/vendor/sweetalert/template/login.blade.php</p>
 
-            </main>
+          <p>
+            Now here you can see i am pointing to the views folder actual file
+            path is resources/views/vendor/sweetalert/template/login.blade.php
+          </p>
+        </main>
 
-            <footer id='footer' class='footer'>
-                <div class='container sep-before'>
-                    <p>&#9993; : <a href="mailto:contact@amjadiqbal.me">contact@amjadiqbal.me</a></p>
-                </div>
-            </footer>
-
-        </div>
+        <footer id="footer" class="footer">
+          <div class="container sep-before">
+            <p>
+              &#9993; :
+              <a href="mailto:douglasm@outlook.com">douglasm@outlook.com</a>
+            </p>
+          </div>
+        </footer>
+      </div>
     </div>
-    <script>window.__assets_js_src = "assets/js/"</script>
+    <script>
+      window.__assets_js_src = "assets/js/";
+    </script>
 
-    <script src='assets/js/main.67d669ac.js'></script>
-    <script src='js/custom.js'></script>
-
-</body>
-
+    <script src="assets/js/main.67d669ac.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>

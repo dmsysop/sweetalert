@@ -2,7 +2,7 @@
 
 /**
   * @author Amjad Iqbal
-  * @author Amjad Iqbal <contact@amjadiqbal.me>
+  * @author Amjad Iqbal <douglasm@outlook.com>
   */
 
 return [
